@@ -1,0 +1,583 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/fathi/AidFatwa.owl#"
+     xml:base="http://www.semanticweb.org/fathi/AidFatwa.owl"
+     xmlns:AidFatwa="http://www.semanticweb.org/fathi/AidFatwa.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#HAS-ATTRIBURE -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#HAS-ATTRIBURE"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#hasAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#hasAction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#HAS-ATTRIBURE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#hasBenifit -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#hasBenifit">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#HAS-ATTRIBURE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#hasTransaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#hasTransaction">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#HAS-ATTRIBURE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#hashokm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#hashokm">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#HAS-ATTRIBURE"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#clas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#clas"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#معاملة"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_الربوية -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_الربوية">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#معاملة"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#المنفعة_المباحة -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#المنفعة_المباحة">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#منفعة"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#المنفعة_المحرمة -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#المنفعة_المحرمة">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#منفعة"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#عتاد -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#عتاد">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#منفعة"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#عقار -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#عقار">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#منفعة"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#عملات -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#عملات">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#منفعة"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#فعل -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#فعل"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#مركبات -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#مركبات">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#منفعة"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#معادن -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#معادن">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#منفعة"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#معاملة -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#معاملة"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#منفعة -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#منفعة"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#إستأجار -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#إستأجار">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#فعل"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#كراء"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#إستلاف -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#إستلاف">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#فعل"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#إقتراض"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#إقتراض -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#إقتراض">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#فعل"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#إقتناء -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#إقتناء">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#فعل"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#شراء"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#الإئتمان -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#الإئتمان">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#الإجارة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#الإجارة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#الإستصناع -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#الإستصناع">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#الإعتماد_المستندي -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#الإعتماد_المستندي">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#البيع_بثمن_مؤجل -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#البيع_بثمن_مؤجل">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#التأمين_التجار -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#التأمين_التجار">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_الربوية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#التورق -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#التورق">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#الحوالة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#الحوالة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#الرهن -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#الرهن">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#السلم -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#السلم">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#الصرف -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#الصرف">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#العربون -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#العربون">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#القرض_الإستهلاكي -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#القرض_الإستهلاكي">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_الربوية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#القرض_الإنتاجي -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#القرض_الإنتاجي">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_الربوية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#الكفالة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#الكفالة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#المرابحة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#المرابحة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#المساومة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#المساومة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#المشاركة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#المشاركة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#المضاربة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#المضاربة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#الهبة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#الهبة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#الودائع_المصرفية -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#الودائع_المصرفية">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_الربوية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#الوديعة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#الوديعة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#الوكالة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#الوكالة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_البنكية_الاسلامية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#بطاقة_الإئتمان_غير_المغطاة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#بطاقة_الإئتمان_غير_المغطاة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المعاملات_الربوية"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#بيت -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#بيت">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#عقار"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#مسكن"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#منزل"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#بيع -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#بيع">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#فعل"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#حرام -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#حرام"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#حلال -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#حلال"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#خمر -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#خمر">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المنفعة_المحرمة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#دكان -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#دكان">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#عقار"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#محل"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#سيارة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#سيارة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#مركبات"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#شراء -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#شراء">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#فعل"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#شقة -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#شقة">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#عقار"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#قطعة_أرض -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#قطعة_أرض">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#عقار"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#كراء -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#كراء">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#فعل"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#مال -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#مال">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#نقود"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#محل -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#محل">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#عقار"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#مسكن -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#مسكن">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#عقار"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#منزل"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#منزل -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#منزل">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#عقار"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#نقود -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#نقود">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المنفعة_المباحة"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#1">
+        <hasAction rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#إستأجار"/>
+        <hasBenifit rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#بيت"/>
+        <hasTransaction rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#الإجارة"/>
+        <hashokm rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#حلال"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#2">
+        <hasAction rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#إقتراض"/>
+        <hasBenifit rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#مال"/>
+        <hasTransaction rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المضاربة"/>
+        <hashokm rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#حلال"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#3">
+        <hasAction rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#شراء"/>
+        <hasBenifit rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#سيارة"/>
+        <hasTransaction rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#المرابحة"/>
+        <hashokm rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#حلال"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/AidFatwa.owl#4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/AidFatwa.owl#4">
+        <hasAction rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#إستأجار"/>
+        <hasAction rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#كراء"/>
+        <hasBenifit rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#منزل"/>
+        <hasTransaction rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#الإجارة"/>
+        <hashokm rdf:resource="http://www.semanticweb.org/fathi/AidFatwa.owl#حلال"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
