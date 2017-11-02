@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxWidth="929.0" minHeight="696.0" minWidth="929.0" prefHeight="696.0" prefWidth="929.0" stylesheets="@../styles/mycss.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screensframework.ScreenController">
+    <children>
+        <Pane layoutX="3.0" layoutY="54.0" prefHeight="642.0" prefWidth="919.0" style="-fx-border-color: #444444FF;" AnchorPane.leftAnchor="3.0" AnchorPane.rightAnchor="3.0">
+            <children>
+                <Label id="addContract" layoutX="742.0" layoutY="83.0" prefHeight="33.0" prefWidth="77.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="transactionField1" layoutX="527.0" layoutY="83.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="193.0" promptText="أدخل اسم المعاملة بالعربية" style="-fx-border-color: #444444FF;">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+                <TextArea fx:id="transactionDef" layoutX="139.0" layoutY="131.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="73.0" prefWidth="580.0" promptText="أدخل تعريفا اصطلاحيا للمعاملة بشكل مختصر " style="-fx-border-color: #444444FF;" wrapText="true">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextArea>
+                <Button id="add" layoutX="79.0" layoutY="219.0" mnemonicParsing="false" onAction="#setItemsCondition" prefHeight="27.0" prefWidth="40.0" style="-fx-border-color: #444444FF; -fx-border-insets: 0 0 -1 0;" />
+                <Label id="hokm" layoutX="743.0" layoutY="364.0" prefHeight="31.0" prefWidth="84.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Pane layoutX="119.0" layoutY="390.0" prefHeight="190.0" prefWidth="742.0">
+                    <children>
+                        <Label id="quran" layoutX="620.0" layoutY="14.0" prefHeight="31.0" prefWidth="84.0">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label id="suna" layoutX="620.0" layoutY="79.0" prefHeight="33.0" prefWidth="84.0">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label id="ijmaa" layoutX="620.0" layoutY="128.0" prefHeight="31.0" prefWidth="84.0">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextArea fx:id="qurenEvidence" layoutX="17.0" layoutY="21.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="49.0" prefWidth="580.0" promptText="أدخل دليل مشروعية المعاملة من القرءان الكريم" style="-fx-border-color: #444444FF;" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextArea>
+                        <TextArea fx:id="sunaEvidence" layoutX="16.0" layoutY="79.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="51.0" prefWidth="580.0" promptText="أدخل دليل مشروعية المعاملة من السنة النبوية" style="-fx-border-color: #444444FF;" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextArea>
+                        <TextArea fx:id="transactionVerdict" layoutX="15.0" layoutY="137.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="49.0" prefWidth="580.0" promptText="أدخل دليل مشروعية المعاملة من الإجتهاد" style="-fx-border-color: #444444FF;" wrapText="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextArea>
+                    </children>
+                </Pane>
+                <Button id="save" layoutX="465.0" layoutY="587.0" mnemonicParsing="false" onAction="#saveOntology" prefHeight="33.0" prefWidth="94.0" styleClass="reg" />
+                <Button id="cancel" layoutX="344.0" layoutY="587.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="94.0" styleClass="reg" />
+                <Label id="addContractlatin" layoutX="391.0" layoutY="78.0" prefHeight="41.0" prefWidth="102.0">
+                    <font>
+                        <Font name="Amiri Quran" size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="transactionField2" layoutX="139.0" layoutY="84.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="238.0" promptText="أدخل اسم المعاملة بالحرف اللاتينية" style="-fx-border-color: #444444FF;">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+                <ListView fx:id="conditionList" layoutX="139.0" layoutY="265.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="99.0" prefWidth="580.0" style="-fx-border-color: #444444FF; -fx-font: 15 Regular;" />
+                <Label id="condition" layoutX="733.0" layoutY="213.0" prefHeight="33.0" prefWidth="102.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="conditionField" layoutX="139.0" layoutY="216.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="580.0" promptText="أدخل شرط من شروط المعاملة" style="-fx-border-color: #444444FF;">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+                <Label id="Defintion" layoutX="730.0" layoutY="122.0" prefHeight="31.0" prefWidth="113.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <ComboBox fx:id="hokmlist" layoutX="567.0" layoutY="371.0" nodeOrientation="RIGHT_TO_LEFT" prefWidth="150.0" promptText="إختر حكم المعاملة" style="-fx-border-color: #000000FF;" styleClass="reg" />
+                <Button id="delete" layoutX="79.0" layoutY="332.0" mnemonicParsing="false" onAction="#print" prefHeight="25.0" prefWidth="40.0" styleClass="reg" />
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="281.0" layoutY="-21.0" prefHeight="40.0" prefWidth="297.0" styleClass="addheader" textAlignment="CENTER" textFill="#361926" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="Arial" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Button id="bb" fx:id="menu" layoutX="870.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="51.0" prefWidth="54.0">
+            <contextMenu>
+                <ContextMenu fx:id="contextmenu" anchorLocation="CONTENT_TOP_RIGHT" opacity="0.88" style="-fx-font: 16 bold; -fx-background-color: #A6CCF0FF;">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#changeScene" text="الرئيسية         " />
+                        <MenuItem mnemonicParsing="false" onAction="#gotToSceen5" text="قائمة المعاملات البنكية" />
+                        <MenuItem fx:id="adds" mnemonicParsing="false" onAction="#gotToSceen2" text="إضافة معاملة         " />
+                        <MenuItem fx:id="updates" mnemonicParsing="false" onAction="#gotToSceen3" text="تعديل معاملة         " />
+                        <MenuItem fx:id="deletes" mnemonicParsing="false" onAction="#gotToSceen4" text="حذف معاملة         " />
+                        <MenuItem mnemonicParsing="false" onAction="#gotToLogin" text="تسجيل الخروج" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </Button>
+    </children>
+</AnchorPane>

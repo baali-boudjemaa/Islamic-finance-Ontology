@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+/*-
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.-
+ *-
+ * Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved.-
+ *-
+ * The contents of this file are subject to the terms of either the GNU-
+ * General Public License Version 2 only ("GPL") or the Common Development-
+ * and Distribution License("CDDL") (collectively, the "License"). You-
+ * may not use this file except in compliance with the License. You can-
+ * obtain a copy of the License at-
+ * https://glassfish.dev.java.net/public/CDDL+GPL_1_1.html-
+ * or packager/legal/LICENSE.txt.  See the License for the specific-
+ * language governing permissions and limitations under the License.-
+ *-
+ * When distributing the software, include this License Header Notice in each-
+ * file and include the License file at packager/legal/LICENSE.txt.-
+ *-
+ * GPL Classpath Exception:-
+ * Oracle designates this particular file as subject to the "Classpath"-
+ * exception as provided by Oracle in the GPL Version 2 section of the License-
+ * file that accompanied this code.-
+ *-
+ * Modifications:-
+ * If applicable, add the following below the License Header, with the fields-
+ * enclosed by brackets [] replaced by your own identifying information:-
+ * "Portions Copyright [year] [name of copyright owner]"-
+ *-
+ * Contributor(s):-
+ * If you wish your version of this file to be governed by only the CDDL or-
+ * only the GPL Version 2, indicate your decision by adding "[Contributor]-
+ * elects to include this software in this distribution under the [CDDL or GPL-
+ * Version 2] license."  If you don't indicate a single choice of license, a-
+ * recipient has the option to distribute your version of this file under-
+ * either the CDDL, the GPL Version 2 or to extend the choice of license to-
+ * its licensees as provided above.  However, if you add GPL Version 2 code-
+ * and therefore, elected the GPL Version 2 license, then the option applies-
+ * only if the new code is made subject to such option by the copyright-
+ * holder.-
+ */ -
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ach" maxWidth="919.0" minWidth="174.0" prefHeight="684.0" prefWidth="919.0" stylesheets="@../styles/mycss.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screensframework.Screen3Controller">
+    <children>
+        <Pane fx:id="listContracts" layoutX="10.0" layoutY="49.0" prefHeight="628.0" prefWidth="919.0" style="-fx-border-color: #444444FF;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+            <children>
+                <Label id="searchcontract" layoutX="762.0" layoutY="81.0" prefHeight="37.0" prefWidth="87.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextArea fx:id="definition" layoutX="156.0" layoutY="163.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="84.0" prefWidth="587.0" style="-fx-border-color: #444444FF; -fx-background-color: transparent;" wrapText="true">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextArea>
+                <Label id="Defintion" layoutX="759.0" layoutY="163.0" prefHeight="31.0" prefWidth="94.0" />
+                <Label id="condition" layoutX="767.0" layoutY="254.0" prefHeight="32.0" prefWidth="94.0" />
+                <ListView fx:id="conditions" editable="true" layoutX="156.0" layoutY="292.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#setItemSelected" prefHeight="95.0" prefWidth="587.0" style="-fx-border-color: #444444FF;" />
+                <TextField fx:id="conditionField" layoutX="156.0" layoutY="256.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="28.0" prefWidth="587.0" style="-fx-border-color: #444444FF;" />
+                <Button id="add" layoutX="103.0" layoutY="257.0" mnemonicParsing="false" onAction="#setItemsCondition" prefHeight="26.0" prefWidth="38.0" style="-fx-border-color: #444444FF; -fx-border-insets: 0 0 -1 0;" />
+                <Button id="save" fx:id="button2" layoutX="550.0" layoutY="589.0" mnemonicParsing="false" onAction="#saveOntology" prefHeight="32.0" prefWidth="94.0" style="-fx-border-color: #444444FF; -fx-border-insets: 0 0 -1 0;" />
+                <Button id="cancel" layoutX="423.0" layoutY="589.0" mnemonicParsing="false" onAction="#changeScene" prefHeight="32.0" prefWidth="103.0" style="-fx-border-color: #444444FF; -fx-border-insets: 0 0 -1 0;" />
+                <Pane layoutX="148.0" layoutY="376.0" prefHeight="213.0" prefWidth="686.0">
+                    <children>
+                        <Label id="quran" layoutX="597.0" layoutY="50.0" prefHeight="32.0" prefWidth="87.0" />
+                        <Label id="suna" layoutX="600.0" layoutY="106.0" prefHeight="32.0" prefWidth="87.0" />
+                        <Label id="ijmaa" layoutX="600.0" layoutY="162.0" prefHeight="37.0" prefWidth="87.0" />
+                        <TextArea fx:id="quran" layoutX="10.0" layoutY="50.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="49.0" prefWidth="587.0" style="-fx-border-color: #444444FF;" wrapText="true" />
+                        <TextArea fx:id="suna" layoutX="10.0" layoutY="106.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="51.0" prefWidth="587.0" style="-fx-border-color: #444444FF;" wrapText="true" />
+                        <TextArea fx:id="ijtihad" layoutX="10.0" layoutY="162.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="49.0" prefWidth="587.0" style="-fx-border-color: #444444FF;" wrapText="true" />
+                        <ComboBox fx:id="hokme" layoutX="447.0" layoutY="14.0" nodeOrientation="RIGHT_TO_LEFT" prefWidth="150.0" style="-fx-border-color: #000000FF; -fx-border-insets: 0 0 -1 0;" />
+                        <Label id="hokm" layoutX="600.0" layoutY="9.0" prefHeight="37.0" prefWidth="81.0" />
+                    </children>
+                </Pane>
+                <ComboBox fx:id="combolist" editable="true" layoutX="544.0" layoutY="87.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="25.0" prefWidth="200.0" style="-fx-border-insets: 0 0 -1 0; -fx-border-color: #444444FF;" visibleRowCount="100" />
+                <Button id="delete" layoutX="103.0" layoutY="363.0" mnemonicParsing="false" onAction="#print" prefHeight="26.0" prefWidth="38.0" style="-fx-border-color: #444444FF; -fx-border-insets: 0 0 -1 0;" />
+                <Button id="search" layoutX="479.0" layoutY="87.0" mnemonicParsing="false" onAction="#setContractInformation" prefHeight="25.0" prefWidth="44.0" style="-fx-border-color: #444444FF; -fx-border-insets: 0 0 -1 0;" />
+                <Label id="namecontract" layoutX="767.0" layoutY="119.0" prefHeight="37.0" prefWidth="81.0" />
+                <TextField fx:id="transactionField1" layoutX="544.0" layoutY="122.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="200.0" promptText="تعديل اسم المعاملة " style="-fx-border-color: #444444FF;">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Label id="addContractlatin2" layoutX="418.0" layoutY="122.0" prefHeight="32.0" prefWidth="112.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="transactionField2" layoutX="156.0" layoutY="123.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="242.0" promptText="تعديل اسم المعاملة " style="-fx-border-color: #444444FF;">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+              <Label alignment="CENTER" layoutX="275.0" layoutY="-20.0" prefHeight="39.0" prefWidth="297.0" style=": ;" styleClass="editcontractheader" textFill="#361926">
+                  <font>
+                      <Font name="Arial" size="24.0" />
+                  </font>
+              </Label>
+            </children>
+        </Pane>
+        <Button id="bb" fx:id="menu" layoutX="855.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="49.0" prefWidth="54.0">
+            <contextMenu>
+                <ContextMenu fx:id="contextmenu" anchorLocation="CONTENT_TOP_RIGHT" opacity="0.88" style="-fx-font: 16 bold; -fx-background-color: #A6CCF0FF;">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#changeScene" text="الرئيسية         " />
+                        <MenuItem mnemonicParsing="false" onAction="#gotToSceen5" text="قائمة المعاملات البنكية" />
+                        <MenuItem fx:id="adds" mnemonicParsing="false" onAction="#gotToSceen2" text="إضافة معاملة         " />
+                        <MenuItem fx:id="updates" mnemonicParsing="false" onAction="#gotToSceen3" text="تعديل معاملة         " />
+                        <MenuItem fx:id="deletes" mnemonicParsing="false" onAction="#gotToSceen4" text="حذف معاملة         " />
+                        <MenuItem mnemonicParsing="false" onAction="#gotToLogin" text="تسجيل الخروج" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </Button>
+    </children>
+</AnchorPane>

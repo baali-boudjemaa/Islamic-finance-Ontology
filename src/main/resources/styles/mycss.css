@@ -1,0 +1,219 @@
+#AnchorPane{
+
+    -fx-background-image: url("../icon/Wdn7ajP.jpg") ;
+    background-repeat: no-repeat;
+
+
+}
+.glass-grey {
+    -fx-background-color: transparent;
+    -fx-border-color:   #6C6D6D6C;
+}
+#record-sales {
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius:20px;
+    -fx-background-color:
+        //linear-gradient(white 0%, #f3f3f3 50%, #ececec 51%, #f2f2f2 100%),
+
+        #93C47DFF//,#d86e3a
+        //,radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c)
+        ;
+    //  -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-border-radius: 20px;
+    -fx-border-color: #d86e3a;
+
+
+}
+#bb{
+    -fx-background-image: url("../icon/Menu_50.png");
+    -fx-background-color: transparent;
+
+
+}
+#a:hover{
+    -fx-pref-width: 250.0;
+
+    -fx-border-radius: 15% 0 0 15%;
+    -fx-translate-x: -50;
+
+    -fx-background-radius: 10;
+    -fx-background-color: #9d4024;
+
+
+}
+#a{
+    -fx-background-color:transparent;
+}
+#pp:hover{
+    -fx-translate-y: -50;
+    -fx-background-color: #8195af;
+}
+#aaa:hover{
+    -fx-background-color:#9898986c;
+}
+#addContract{
+    -fx-background-image: url("../icon/addContract.png");
+
+}
+#addContractlatin{
+    -fx-background-image: url("../icon/addContractlatin.png");
+
+}
+#Defintion{
+    -fx-background-image: url("../icon/contractDefinition.png");
+
+}
+#condition{
+    -fx-background-image: url("../icon/condition.png");
+}
+#hokm{
+    -fx-background-image: url("../icon/hokm.png");
+}
+#quran{
+    -fx-background-image: url("../icon/quran.png");
+}
+#suna{
+    -fx-background-image: url("../icon/suna.png");
+}
+#ijmaa{
+    -fx-background-image: url("../icon/ijmaa.png");
+}
+#add{
+    -fx-background-image: url("../icon/add.png");
+}#delete{
+    -fx-background-image: url("../icon/delete.png");
+}
+#cancel{
+    -fx-background-image: url("../icon/cancel.png");
+}
+#save{
+    -fx-background-image: url("../icon/save.png");
+}
+.listContract{
+    -fx-background-image: url("../icon/listContract.png");
+}
+.addcontract{
+    -fx-background-image: url("../icon/addcontracmenut.png");
+}
+.editcontract{
+    -fx-background-image: url("../icon/editcontract.png");
+}
+.deletecontract{
+    -fx-background-image: url("../icon/deletecontract.png");
+}
+#searchcontract{
+    -fx-background-image: url("../icon/searchcontract.png");
+}
+#namecontract{
+    -fx-background-image: url("../icon/namecontract.png");
+
+}
+#search{
+    -fx-background-image: url("../icon/search.png");
+}
+#addContractlatin2{
+    -fx-background-image: url("../icon/addContractlatin2.png");
+
+}
+#add2{
+    -fx-background-image: url("../icon/add2.png");
+}
+#listContract2{
+    -fx-background-image: url("../icon/listContract2.png");
+}
+.mylabel{
+    -fx-background-image: url("../icon/listContract2.png");
+}
+.question{
+    -fx-background-image: url("../icon/question.png");
+}
+.header{
+    -fx-background-image: url("../icon/header.png");
+
+}
+.questionheader{
+    -fx-background-image: url("../icon/questionheader.png");
+
+}
+.editheader{
+    -fx-background-image: url("../icon/editheader.png");
+
+}
+.deleteheader{
+    -fx-background-image: url("../icon/deleteheader.png");
+
+}
+.listheader{
+    -fx-background-image: url("../icon/listheader.png");
+
+}
+.addheader{
+    -fx-background-image: url("../icon/addheader.png");
+
+}
+.askquestion{
+    -fx-background-image: url("../icon/askquestion.png");
+
+}
+.action{
+    -fx-background-image: url("../icon/action.png");
+
+}
+.benifitkind{
+    -fx-background-image: url("../icon/benifitkind.png");
+}
+.contractkind{
+    -fx-background-image: url("../icon/contractkind.png");
+}
+.answer{
+    -fx-background-image: url("../icon/answer.png");
+}
+.answerquestion{
+    -fx-background-image: url("../icon/answerquestion.png");
+}
+.contracthokm{
+    -fx-background-image: url("../icon/contracthokm.png");
+}
+
+.answareevidence{
+    -fx-background-image: url("../icon/answareevidence.png");
+}
+.caselikess{
+    -fx-background-image: url("../icon/caselikess.png");
+}
+.ofquren{
+    -fx-background-image: url("../icon/ofquren.png");   
+}
+.ofsuna{
+    -fx-background-image: url("../icon/ofsuna.png");   
+
+}
+.ofijtihad{
+    -fx-background-image: url("../icon/ofijtihad.png");  
+}
+.addfatwa{
+    -fx-background-image: url("../icon/addfatwa.png");   
+}
+.actionkind{
+    -fx-background-image: url("../icon/actionkind.png");      
+}
+.hokmof{
+    -fx-background-image: url("../icon/hokmof.png");    
+}
+.newtype{
+  -fx-background-image: url("../icon/newtype.png");     
+}
+.newclass{
+-fx-background-image: url("../icon/newclass.png");       
+}
+.editfatwaheader{
+-fx-background-image: url("../icon/editfatwaheader.png");     
+}
+.reg{
+    -fx-border-color : #444444FF ;
+    -fx-border-insets : 0 0 -1 0 ;
+}
+.editcontractheader{
+    -fx-background-image: url("../icon/editcontractheader.png");     
+}

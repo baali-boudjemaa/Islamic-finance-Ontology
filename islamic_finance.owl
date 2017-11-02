@@ -1,0 +1,1368 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/IslamicFinanceOWL.owl#"
+     xml:base="http://www.semanticweb.org/IslamicFinanceOWL.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:IslamicFinanceOWL="http://www.semanticweb.org/IslamicFinanceOWL.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:untitled-ontology-26="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:IslamicFinanceOntology="http://www.w3.org/IslamicFinanceOntology.owl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#hasShariahEvidence -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#hasShariahEvidence">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#hasConditions -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#hasConditions">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#hasHokm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#hasHokm">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Ahkam_shari&apos;a"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#hasConditions -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#hasConditions"/>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#hasHokm -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#hasHokm"/>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#hasShariahEvidence -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#hasShariahEvidence"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#hasCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#hasCondition">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#hasCondition1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#hasCondition1">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#hasCondition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#hasCondition2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#hasCondition2">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#hasCondition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#hasCondition3 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#hasCondition3">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#hasCondition"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#hasIjtihadEvidence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#hasIjtihadEvidence">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#hasQuranEvidece -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#hasQuranEvidece">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#hasSunaEvidence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#hasSunaEvidence">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#hasdefinition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#hasdefinition">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#hashokmname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#hashokmname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Ahkam_shari&apos;a"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#hasname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#hasname">
+        <rdfs:domain rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#hasCondition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#hasCondition"/>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#hasCondition4 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#hasCondition4">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/IslamicFinanceOntology.owl#hasCondition"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/IslamicFinanceOntology.owl#Conditions"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#hasdefinition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#hasdefinition"/>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#hasname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#hasname"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#BBA -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#BBA"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Contracts -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Contracts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Corporate_Financing -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Corporate_Financing">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Financing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Current_Account -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Current_Account">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Deposits"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Dayn -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Dayn">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Deposits -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Deposits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Finance -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Finance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Financing -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Financing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Framework -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Capital_Market"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Gharar -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Gharar">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#History_of_Islamic -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#History_of_Islamic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Hiwalah -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Hiwalah"/>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Ibra -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Ibra">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Investment -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Investment">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Deposits"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Iqalah -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Iqalah">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Maqasid_al-Shariah -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Maqasid_al-Shariah">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Maysir -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Maysir">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Others -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Others">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Capital_Market"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Principles -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Principles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Retail_Financing -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Retail_Financing">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Financing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Riba -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Riba">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Risk -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Risk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Saving_Account -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Saving_Account">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Deposits"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Tanazul -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Tanazul">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Team_Deposit -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Team_Deposit">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Deposits"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Treasury -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Treasury">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Financing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Waqf -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Waqf">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Wealth_Management -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Wealth_Management">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Financing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Zakah -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Zakah">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Governance_&amp;_Ethics -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Governance_&amp;_Ethics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Khiyyar&apos; -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Khiyyar&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Tabarru&apos; -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Tabarru&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/ontologies/ont.owl#Wa&apos;d -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/ontologies/ont.owl#Wa&apos;d">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Framework">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Capital_Market -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Capital_Market">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Economics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Economics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Liquidity_Risk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Liquidity_Risk">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Risk"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Market_Risk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Market_Risk">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Risk"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Operational_Risk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Operational_Risk">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Risk"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Others -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Others">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Primary_Sources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Primary_Sources">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Type">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Banking"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Types -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Product_Types">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Capital_Market"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Qiyas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Qiyas">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Secondary_Sources"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Quran -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Quran">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Primary_Sources"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Risk_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Risk_Management">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Risk"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Secondary_Sources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Secondary_Sources">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Sunna -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Sunna">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Primary_Sources"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Takaful -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Takaful">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Ahkam_shari&apos;a -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Ahkam_shari&apos;a"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Ijma&apos; -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Ijma&apos;">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Secondary_Sources"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Ijtihad_&amp;_Fatwa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Ijtihad_&amp;_Fatwa">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Issues_&amp;_Challenge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Issues_&amp;_Challenge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Wa&apos;d -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Wa&apos;d">
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#Ahkam_sharia -->
+
+    <owl:Class rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#Ahkam_sharia"/>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#Conditions -->
+
+    <owl:Class rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#Conditions"/>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#Contracts -->
+
+    <owl:Class rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#Contracts"/>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#Shariah_Sources -->
+
+    <owl:Class rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#Shariah_Sources"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#BayI_bitaksit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#BayI_bitaksit">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <IslamicFinanceOntology:hasname>بيع بالتقسيط</IslamicFinanceOntology:hasname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_BBA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_BBA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Inah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Inah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Mudarabah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Mudarabah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون راس المال نقدا في شكل عملت نقدية وراقية، اذ ل يجوز المضاربة على العقار او عروض او سلعة</hasCondition>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون عينا ل دينا في ذمة المضارب، فل يجوز المضاربة بمال غائب</hasCondition>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون معلوم القدر)اي القيمة(والوصفة)اي الجنس،(وان يكون مقدما من رب المال الى العامل</hasCondition>
+        <hasCondition1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون راس المال نقدا في شكل عملت نقدية وراقية، اذ ل يجوز المضاربة على العقار او عروض او سلعة</hasCondition1>
+        <hasCondition2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون معلوم القدر)اي القيمة(والوصفة)اي الجنس،(وان يكون مقدما من رب المال الى العامل</hasCondition2>
+        <hasCondition3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون عينا ل دينا في ذمة المضارب، فل يجوز المضاربة بمال غائب</hasCondition3>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Murabahah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Murabahah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون الربح معلوما</hasCondition>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون العقد صحيحا</hasCondition>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">تحديد التكلفة الكلية للسعة تفصيل بحيث تتضمن الشراء،الرسوم الجمركية والمصاريف الخرى حسب مكان وشروط تسليم السلعة</hasCondition>
+        <hasCondition1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون العقد صحيحا</hasCondition1>
+        <hasCondition2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">تحديد التكلفة الكلية للسعة تفصيل بحيث تتضمن الشراء،الرسوم الجمركية والمصاريف الخرى حسب مكان وشروط تسليم السلعة</hasCondition2>
+        <hasCondition3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون الربح معلوما</hasCondition3>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Musawamah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Musawamah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Musharakah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Musharakah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">أن المال والعمل شركة بين الطرفين</hasCondition>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الشريكين اهل للتوكيل والتوكل</hasCondition>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ل يشففترط ان يكونففا الشففريكان مسففلمين، مففع اشففتراط الراقابففة بحيففث ل ينفففرد
+بالتصرف</hasCondition>
+        <hasCondition1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الشريكين اهل للتوكيل والتوكل</hasCondition1>
+        <hasCondition2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ل يشففترط ان يكونففا الشففريكان مسففلمين، مففع اشففتراط الراقابففة بحيففث ل ينفففرد
+بالتصرف</hasCondition2>
+        <hasCondition3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">أن المال والعمل شركة بين الطرفين</hasCondition3>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Salam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Salam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يسلم راس المال في المجلس اقبل الترفقة</hasCondition>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون الجل معلوما بالشهور واليام ل بالحصاد او ادراك الثمار</hasCondition>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون راس المال معلوما حتى اذا نعذر تسليم المسلم فيه امكن الرجوع الى اقيمة راس مال</hasCondition>
+        <hasCondition1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون راس المال معلوما حتى اذا نعذر تسليم المسلم فيه امكن الرجوع الى اقيمة راس مال</hasCondition1>
+        <hasCondition2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يسلم راس المال في المجلس اقبل الترفقة</hasCondition2>
+        <hasCondition3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون الجل معلوما بالشهور واليام ل بالحصاد او ادراك الثمار</hasCondition3>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Urban -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Urban">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Wadiah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Wadiah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Wakalah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Wakalah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Arahn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Arahn">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_BBA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_BBA">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Inah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Inah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Letter_of_Credit -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Letter_of_Credit">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Mudarabah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Mudarabah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+        <hasIjtihadEvidence rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ثبت عن جماعة من الصحابة انهم دفعوا مال اليتيم مضاربة، منهم عمرابن الخطاب، عثمان ابن عفان، وعلي ابن طالب ...رضي ا عنهم</hasIjtihadEvidence>
+        <hasQuranEvidece rdf:datatype="http://www.w3.org/2001/XMLSchema#string">اقوله تعالى)وءاخرون يضربون في الرض يبتغون من فضل (</hasQuranEvidece>
+        <hasSunaEvidence rdf:datatype="http://www.w3.org/2001/XMLSchema#string">قال صلى ا عليه وسلم&quot;ثلثة فيهن البركة:البيع الى أجل,والمقارضة، وخلط البر بالشعير&quot;</hasSunaEvidence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Murabahah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Murabahah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+        <hasIjtihadEvidence rdf:datatype="http://www.w3.org/2001/XMLSchema#string">واقد اجمعت المة على جواز المرابحة</hasIjtihadEvidence>
+        <hasQuranEvidece rdf:datatype="http://www.w3.org/2001/XMLSchema#string">قوله تعالى )وابتغوا من فضل (</hasQuranEvidece>
+        <hasSunaEvidence rdf:datatype="http://www.w3.org/2001/XMLSchema#string">قوله صلى عليه وسلم )اذا اختلف الجنسان فبيعوا كيف شئتم اذا كان يدا بيد،( وهو حديث يدل على جواز بيع السعة باكثر من راس المال</hasSunaEvidence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Musawamah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Musawamah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Musharakah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Musharakah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+        <hasIjtihadEvidence rdf:datatype="http://www.w3.org/2001/XMLSchema#string">المسلمون أجمعوا على جواز الشركة في الجملة</hasIjtihadEvidence>
+        <hasQuranEvidece rdf:datatype="http://www.w3.org/2001/XMLSchema#string">قال الله تعالى (فهم شركاء في الثلث)</hasQuranEvidece>
+        <hasSunaEvidence rdf:datatype="http://www.w3.org/2001/XMLSchema#string">جاء في الحديث القدسي فيما يروى عن أبي هريرة رفعه إلى
+النبي ص للى ا عليه وسلم اقال: ((إن الله  عز وجل يقول:أنا ثالث الشريكين ما
+لم يخن أحدهما صاحبه، فإذا خانه خرجت من بينهما)) رواه أبو داود</hasSunaEvidence>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Salam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Salam">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Urban -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Urban">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Wadiah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Wadiah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Wakalah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Wakalah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Ististna&apos; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Ististna&apos;">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Istisna&apos; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Istisna&apos;">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Principles"/>
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Shariah_Principles"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Shariah_Sources"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#BBA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#BBA">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <untitled-ontology-26:hasConditions rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_BBA"/>
+        <untitled-ontology-26:hasHokm rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Halal"/>
+        <untitled-ontology-26:hasname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">البيع بثمن مؤجل</untitled-ontology-26:hasname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Halal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Halal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Ahkam_shari&apos;a"/>
+        <hashokmname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">حلال</hashokmname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Haram -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Haram">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Ahkam_shari&apos;a"/>
+        <hashokmname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">حرام</hashokmname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Inah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Inah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <untitled-ontology-26:hasConditions rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Inah"/>
+        <untitled-ontology-26:hasHokm rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Halal"/>
+        <untitled-ontology-26:hasname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الإئتمان</untitled-ontology-26:hasname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Moubah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Moubah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Ahkam_shari&apos;a"/>
+        <hashokmname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">مباح</hashokmname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Mudarabah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Mudarabah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Conditions"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <hasShariahEvidence rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Mudarabah"/>
+        <untitled-ontology-26:hasConditions rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Mudarabah"/>
+        <untitled-ontology-26:hasHokm rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Halal"/>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون راس المال نقدا في شكل عملت نقدية وراقية، اذ ل يجوز المضاربة على العقار او عروض او سلعة</hasCondition>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون عينا ل دينا في ذمة المضارب، فل يجوز المضاربة بمال غائب</hasCondition>
+        <hasCondition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون معلوم القدر)اي القيمة(والوصفة)اي الجنس،(وان يكون مقدما من رب المال الى العامل</hasCondition>
+        <hasCondition1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون راس المال نقدا في شكل عملت نقدية وراقية، اذ ل يجوز المضاربة على العقار او عروض او سلعة</hasCondition1>
+        <hasCondition2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون معلوم القدر)اي القيمة(والوصفة)اي الجنس،(وان يكون مقدما من رب المال الى العامل</hasCondition2>
+        <hasCondition3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان يكون عينا ل دينا في ذمة المضارب، فل يجوز المضاربة بمال غائب</hasCondition3>
+        <hasdefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">المضاربة هي عبارة عن عقد الشتراك في الربح الناتج من المال يكون من طرف ومن عمل من طرف اخر، والول هو صاحب المال والثاني هو المضارب أو العامل...ولكن من الجانبين نصيب شائع من الربح إن تحقق</hasdefinition>
+        <untitled-ontology-26:hasname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">المضاربة</untitled-ontology-26:hasname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Murabahah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Murabahah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <hasShariahEvidence rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Murabahah"/>
+        <untitled-ontology-26:hasConditions rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Murabahah"/>
+        <untitled-ontology-26:hasHokm rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Halal"/>
+        <hasdefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">بيع السلعة بالثمن الذي اشتراها به وزيادة ربح معلوم لهما، وهذا تعريف ذهب اليه المالكية، كما ان تعريف المرابحة في المذاهب الخرى تصب في هذا المعنى</hasdefinition>
+        <untitled-ontology-26:hasname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">المرابحة</untitled-ontology-26:hasname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Musawamah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Musawamah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <untitled-ontology-26:hasConditions rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Musawamah"/>
+        <untitled-ontology-26:hasHokm rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Halal"/>
+        <untitled-ontology-26:hasname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">المساومة</untitled-ontology-26:hasname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Musharakah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Musharakah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <hasShariahEvidence rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Shariah_Evidence_Of_Musharakah"/>
+        <untitled-ontology-26:hasConditions rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Musharakah"/>
+        <untitled-ontology-26:hasHokm rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Halal"/>
+        <hasdefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">عقد بين اثنين فاكثر على ان العمل والمال من كليهما بقصد الربح</hasdefinition>
+        <untitled-ontology-26:hasname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">المشاركة</untitled-ontology-26:hasname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Salam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Salam">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <untitled-ontology-26:hasConditions rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Salam"/>
+        <untitled-ontology-26:hasHokm rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Halal"/>
+        <hasdefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">عقد موصوف في الثمة مؤجل بثمن مقبوض في محل العقد، فهو بيع يتقدم فيه الثمن ويتاخر فيه تسليم السلعة لجل معلوم</hasdefinition>
+        <untitled-ontology-26:hasname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">السلم</untitled-ontology-26:hasname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Urbun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Urbun">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <untitled-ontology-26:hasConditions rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Urban"/>
+        <untitled-ontology-26:hasHokm rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Halal"/>
+        <untitled-ontology-26:hasname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">العربون</untitled-ontology-26:hasname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Wadiah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Wadiah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <untitled-ontology-26:hasConditions rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Wadiah"/>
+        <untitled-ontology-26:hasHokm rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Halal"/>
+        <untitled-ontology-26:hasname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الوديعة</untitled-ontology-26:hasname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Wakalah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Wakalah">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <untitled-ontology-26:hasConditions rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Wakalah"/>
+        <untitled-ontology-26:hasHokm rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Halal"/>
+        <untitled-ontology-26:hasname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الوكالة</untitled-ontology-26:hasname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Istisna&apos; -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Istisna&apos;">
+        <rdf:type rdf:resource="http://www.co-ode.org/ontologies/ont.owl#Contracts"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Fundamental_of_Shariah"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Islamic_Finance"/>
+        <untitled-ontology-26:hasConditions rdf:resource="http://www.semanticweb.org/IslamicFinanceOWL.owl#Necessary_Condition_Of_Ististna&apos;"/>
+        <untitled-ontology-26:hasHokm rdf:resource="http://www.semanticweb.org/fathi/ontologies/2016/10/untitled-ontology-26#Halal"/>
+        <hasdefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">عقد على مبيع في الذمة وشرط عمله على الصانع</hasdefinition>
+        <untitled-ontology-26:hasname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">الإستصناع</untitled-ontology-26:hasname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#Halal -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#Halal">
+        <rdf:type rdf:resource="http://www.w3.org/IslamicFinanceOntology.owl#Ahkam_sharia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#Necessary_Condition_Of_Sale -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#Necessary_Condition_Of_Sale">
+        <rdf:type rdf:resource="http://www.w3.org/IslamicFinanceOntology.owl#Conditions"/>
+        <IslamicFinanceOntology:hasCondition4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ان تكون العين المؤجرة معروفة ومقبولة من اقبل المتعااقد ومقدورة التسليم</IslamicFinanceOntology:hasCondition4>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#Sale -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#Sale">
+        <rdf:type rdf:resource="http://www.w3.org/IslamicFinanceOntology.owl#Contracts"/>
+        <IslamicFinanceOntology:hasConditions rdf:resource="http://www.w3.org/IslamicFinanceOntology.owl#Necessary_Condition_Of_Sale"/>
+        <IslamicFinanceOntology:hasHokm rdf:resource="http://www.w3.org/IslamicFinanceOntology.owl#Halal"/>
+        <IslamicFinanceOntology:hasShariahEvidence rdf:resource="http://www.w3.org/IslamicFinanceOntology.owl#Shariah_Evidence_Of_Sale"/>
+        <IslamicFinanceOntology:hasdefinition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">aaa</IslamicFinanceOntology:hasdefinition>
+        <IslamicFinanceOntology:hasname rdf:datatype="http://www.w3.org/2001/XMLSchema#string">بيع</IslamicFinanceOntology:hasname>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.w3.org/IslamicFinanceOntology.owl#Shariah_Evidence_Of_Sale -->
+
+    <owl:NamedIndividual rdf:about="http://www.w3.org/IslamicFinanceOntology.owl#Shariah_Evidence_Of_Sale">
+        <rdf:type rdf:resource="http://www.w3.org/IslamicFinanceOntology.owl#Shariah_Sources"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

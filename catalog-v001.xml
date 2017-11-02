@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1509489030955" name="http://www.semanticweb.org/IslamicFinanceOWL.owl" uri="islamic_finance.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1509489030955" name="http://www.semanticweb.org/fathi/AidFatwa.owl" uri="AidFatwa2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1509489030955" name="shadowed:http://www.semanticweb.org/IslamicFinanceOWL.owl" uri="target/classes/ontofile/islamic_finance.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1509489030955" name="shadowed:http://www.semanticweb.org/IslamicFinanceOWL.owl" uri="src/main/java/screensframework/islamic_finance.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1509489030955" name="shadowed:http://www.semanticweb.org/IslamicFinanceOWL.owl" uri="src/main/resources/ontofile/islamic_finance.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1509489030955" name="shadowed:http://www.semanticweb.org/fathi/AidFatwa.owl" uri="target/classes/ontofile/AidFatwa2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1509489030955" name="shadowed:http://www.semanticweb.org/fathi/AidFatwa.owl" uri="src/main/resources/ontofile/AidFatwa2.owl"/>
+    </group>
+</catalog>

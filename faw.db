@@ -1,0 +1,36 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE `fatwa` (
+  `id` integer NOT NULL PRIMARY KEY AUTOINCREMENT ,
+  `hokm` varchar(150)  NOT NULL,
+  `quren` TEXT NOT NULL,
+  `suna` TEXT  NOT NULL,
+  `ijtihad` TEXT NOT NULL
+  
+);
+INSERT INTO "fatwa" VALUES(1,'حلال','قال الله تعالى \"وابتغوا من فضل الله\"','ضض','ضض');
+INSERT INTO "fatwa" VALUES(2,'حلال','قوله تعالى \"فإن أرضعن لكم فأتوهن أجورهن\"','قوله صلى ا عليه وسلم \"أعطوا الجير أجره اقبل أن يجف\r\nعراقه\"','فقد أجمع السلف الصالح من الصحابة والتابعين على جواز الجارة\r\nلحاجة الناس الى تبادل في المنافع والخدمات');
+INSERT INTO "fatwa" VALUES(3,'حلال','صصصصصص','صصصصصص','صصصصصص');
+INSERT INTO "fatwa" VALUES(4,'حلال','ضضض','ضضض','ضضضض');
+INSERT INTO "fatwa" VALUES(5,'حلال','ضضض','ضضض','ضضضضص');
+INSERT INTO "fatwa" VALUES(6,'حلال','سسسس','سسسسس','سسسسسس');
+INSERT INTO "fatwa" VALUES(7,'حلال','ءءءءءءءءءءء','ءءءءءءءءءءء','ءءءءءءءءءءءءء');
+CREATE TABLE `cas` (
+  `id` integer   PRIMARY KEY AUTOINCREMENT,
+  `act` varchar(255)  NOT NULL,
+  `benifit` varchar(255)  NOT NULL,
+  `transactio`  varchar(255)  NOT NULL,
+  `inde` integer NOT NULL ,
+  CONSTRAINT `fk_cas_1` FOREIGN KEY (`inde`) REFERENCES `fatwa` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+);
+INSERT INTO "cas" VALUES(1,'شراء','عقار','المرابحة',1);
+INSERT INTO "cas" VALUES(2,'إيجار','عقار','اﻹيجارة',2);
+INSERT INTO "cas" VALUES(3,'إيجار','عقار','اﻹيجارة',2);
+INSERT INTO "cas" VALUES(4,'إقتناء','عقار','المضاربة',3);
+INSERT INTO "cas" VALUES(5,'إقتناء','عقار','المضاربة',4);
+INSERT INTO "cas" VALUES(6,'كراء','عقار','المضاربة',5);
+INSERT INTO "cas" VALUES(8,'شراء','عقار','المساومة',7);
+DELETE FROM sqlite_sequence;
+INSERT INTO "sqlite_sequence" VALUES('fatwa',7);
+INSERT INTO "sqlite_sequence" VALUES('cas',8);
+COMMIT;

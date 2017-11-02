@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+    <User type="guest">
+        <username>guest</username>
+        <password>xc</password>
+    </User>
+    <User type="administrator">
+        <username>admin</username>
+        <password>admin</password>
+    </User>
+
+</Users>

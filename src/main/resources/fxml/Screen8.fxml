@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ach" nodeOrientation="LEFT_TO_RIGHT" prefHeight="696.0" prefWidth="929.0" stylesheets="@../styles/mycss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screensframework.Screen8Controller">
+    <children>
+        <Button id="bb" fx:id="menu" layoutX="875.0" layoutY="4.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="43.0" prefWidth="47.0">
+            <contextMenu>
+                <ContextMenu fx:id="contextmenu" anchorLocation="CONTENT_TOP_RIGHT" opacity="0.88" style="-fx-font: 16 bold; -fx-background-color: #A6CCF0FF;">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#changeScene" text="الرئيسية         " />
+                        <MenuItem mnemonicParsing="false" onAction="#gotToLogin" text="تسجيل الخروج" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </Button>
+        <Pane fx:id="" layoutX="8.0" layoutY="66.0" maxHeight="626.0" maxWidth="919.0" prefHeight="626.0" prefWidth="919.0" style="-fx-border-color: #444444FF;" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="66.0">
+            <children>
+            <VBox layoutX="53.0" layoutY="9.0" prefHeight="92.0" prefWidth="100.0" />
+                <Label layoutX="829.0" layoutY="88.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="20.0" prefWidth="59.0" styleClass="actionkind">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="824.0" layoutY="128.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="29.0" prefWidth="69.0" styleClass="benifitkind">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="824.0" layoutY="181.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="69.0" styleClass="contractkind">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="761.0" layoutY="224.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="137.0" styleClass="contracthokm">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="829.0" layoutY="273.0" prefHeight="25.0" prefWidth="59.0" styleClass="ofquren">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="829.0" layoutY="367.0" prefHeight="25.0" prefWidth="59.0" styleClass="ofsuna">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="820.0" layoutY="451.0" prefHeight="26.0" prefWidth="69.0" styleClass="ofijtihad">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="action" layoutX="565.0" layoutY="82.0" nodeOrientation="RIGHT_TO_LEFT" promptText="إختر الفعل">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="benifit" layoutX="565.0" layoutY="128.0" nodeOrientation="RIGHT_TO_LEFT" promptText="إختر المنفعة">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+                <TextArea fx:id="quren" layoutX="135.0" layoutY="273.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="81.0" prefWidth="627.0" wrapText="true" />
+                <TextArea fx:id="ijtihad" layoutX="135.0" layoutY="451.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="81.0" prefWidth="627.0" wrapText="true" />
+                <TextArea fx:id="suna" layoutX="135.0" layoutY="361.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="81.0" prefWidth="627.0" wrapText="true" />
+                <ComboBox fx:id="transactioncombo" layoutX="565.0" layoutY="179.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="29.0" prefWidth="196.0" promptText="إختر معاملة" />
+                <Button fx:id="button2" layoutX="479.0" layoutY="587.0" mnemonicParsing="false" onAction="#saveChange" text="حفظ" />
+                <Button fx:id="button1" layoutX="407.0" layoutY="587.0" mnemonicParsing="false" onAction="#gotToSceen6" text="ألغاء" />
+                <ComboBox fx:id="hokmcombo" layoutX="565.0" layoutY="223.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="26.0" prefWidth="196.0" promptText="إختر الحكم" />
+                <Button layoutX="312.0" layoutY="130.0" mnemonicParsing="false" onAction="#newClass" prefHeight="25.0" prefWidth="69.0" styleClass="newtype" />
+                <Pane fx:id="classpane" layoutX="47.0" layoutY="125.0" prefHeight="109.0" prefWidth="256.0" style="-fx-border-color: #000000FF;">
+                    <children>
+                        <JFXButton layoutX="14.0" layoutY="70.0" onAction="#newClasss" style="-fx-border-color: #000000FF; -fx-border-width: 0.25;" text="أضف" />
+                        <Label layoutX="64.0" layoutY="8.0" prefHeight="29.0" prefWidth="145.0" styleClass="newclass">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="textFieldclass" focusColor="#a84440" labelFloat="true" layoutX="62.0" layoutY="66.0" nodeOrientation="RIGHT_TO_LEFT">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </JFXTextField>
+                    </children>
+                </Pane>
+                <ComboBox fx:id="classes" layoutX="397.0" layoutY="130.0" nodeOrientation="RIGHT_TO_LEFT" prefWidth="150.0" promptText="إختر صنف المنفعة" />
+            </children>
+        </Pane>
+        <Label alignment="CENTER" layoutX="283.0" layoutY="40.0" prefHeight="40.0" prefWidth="310.0" styleClass="editfatwaheader" textFill="#361926">
+            <font>
+                <Font name="Arial" size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

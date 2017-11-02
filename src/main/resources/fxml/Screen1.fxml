@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="vBoxScene1" maxWidth="929.0" minHeight="637.0" minWidth="178.0" prefHeight="637.0" prefWidth="929.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screensframework.Screen1Controller">
+    <children>
+        <Pane fx:id="pane" layoutX="310.0" layoutY="219.0" prefHeight="225.0" prefWidth="309.0">
+            <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="1.0" opacity="0.38" prefHeight="49.0" prefWidth="309.0" style="-fx-background-color: #FFE599FF;" styleClass="header" textFill="#402bab" underline="true">
+                    <font>
+                        <Font name="Arabic Typesetting" size="35.0" />
+                    </font>
+                </Label>
+                <Button id="aaa" fx:id="button5" alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="49.0" mnemonicParsing="false" onAction="#changeScene" prefHeight="34.0" prefWidth="309.0" style=": ;" stylesheets="@mycss.css" textAlignment="JUSTIFY" textFill="#f2f0f1">
+
+                    <effect>
+                        <SepiaTone />
+                    </effect>
+                    <font>
+                        <Font name="Arial Bold" size="17.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="glass-grey" />
+                        <String fx:value="listContract" />
+                    </styleClass>
+
+
+                </Button>
+                <Button id="aaa" fx:id="button1" layoutX="-1.0" layoutY="84.0" mnemonicParsing="false" onAction="#changeScene" prefHeight="34.0" prefWidth="309.0" stylesheets="@mycss.css" textAlignment="JUSTIFY" textFill="#fff9f9">
+
+                    <effect>
+                        <SepiaTone />
+                    </effect>
+                    <font>
+                        <Font name="Arial Bold" size="17.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="glass-grey" />
+                        <String fx:value="addcontract" />
+                    </styleClass>
+
+                </Button>
+                <Button id="aaa" fx:id="button2" layoutX="-1.0" layoutY="119.0" mnemonicParsing="false" onAction="#changeScene" prefHeight="34.0" prefWidth="309.0" stylesheets="@mycss.css" textAlignment="JUSTIFY" textFill="#f2eeee">
+
+                    <effect>
+                        <SepiaTone />
+                    </effect>
+                    <font>
+                        <Font name="Arial Bold" size="17.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="glass-grey" />
+                        <String fx:value="editcontract" />
+                    </styleClass>
+
+                </Button>
+                <Button id="aaa" fx:id="button3" layoutX="-1.0" layoutY="154.0" mnemonicParsing="false" onAction="#changeScene" prefHeight="34.0" prefWidth="309.0" stylesheets="@mycss.css" textAlignment="JUSTIFY" textFill="#f5f3f3">
+
+                    <effect>
+                        <SepiaTone />
+                    </effect>
+                    <font>
+                        <Font name="Arial Bold" size="17.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="glass-grey" />
+                        <String fx:value="deletecontract" />
+                    </styleClass>
+
+                </Button>
+            <Button id="aaa" fx:id="button6" layoutX="-1.0" layoutY="189.0" mnemonicParsing="false" onAction="#changeScene" prefHeight="34.0" prefWidth="309.0" textFill="#fcfcfc">
+               <font>
+                  <Font name="AGaramondPro-Regular" size="15.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="glass-grey" />
+                  <String fx:value="question" />
+               </styleClass></Button>
+            </children>
+        </Pane>
+      <Button id="bb" fx:id="menu" layoutX="865.0" layoutY="7.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="49.0" prefWidth="54.0">
+         <contextMenu>
+            <ContextMenu fx:id="contextmenu" anchorLocation="CONTENT_TOP_RIGHT" opacity="0.88" style="-fx-font: 16 bold; -fx-background-color: #A6CCF0FF;">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#changeScene" text="فضاء المسؤل        " />
+                  <MenuItem mnemonicParsing="false" onAction="#gotToLogin" text="تسجيل الخروج" />
+               </items>
+            </ContextMenu>
+         </contextMenu>
+      </Button>
+    </children>
+   <stylesheets>
+      <URL value="@mycss.css" />
+      <URL value="@../styles/mycss.css" />
+   </stylesheets>
+</AnchorPane>

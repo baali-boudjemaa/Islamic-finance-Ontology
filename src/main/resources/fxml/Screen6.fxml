@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="p" prefHeight="644.0" prefWidth="929.0" stylesheets="@../styles/mycss.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screensframework.Screen6Controller">
+    <children>
+        <Pane layoutX="11.0" layoutY="53.0" maxHeight="684.0" maxWidth="919.0" prefHeight="677.0" prefWidth="919.0" style="-fx-border-color: #444444FF;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+            <children>
+                <Pane fx:id="general" layoutX="56.0" layoutY="158.0" prefHeight="479.0" prefWidth="846.0">
+                    <children>
+                        <Pane fx:id="analyse" layoutX="118.0" layoutY="-7.0" prefHeight="301.0" prefWidth="723.0">
+                            <children>
+                                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="558.0" layoutY="29.0" prefHeight="25.0" prefWidth="157.0" styleClass="answerquestion" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                                    <font>
+                                        <Font size="16.0" />
+                                    </font>
+                                </Label>
+                        <TextArea layoutY="54.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="130.0" prefWidth="700.0" wrapText="true">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </TextArea>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="caseLike" layoutX="143.0" layoutY="301.0" prefHeight="164.0" prefWidth="607.0">
+                            <children>
+                                <TableView fx:id="tableView" layoutX="1.0" layoutY="42.0" prefHeight="117.0" prefWidth="607.0">
+                                    <columns>
+                                        <TableColumn fx:id="transaction" prefWidth="193.0" style="-fx-alignment: CENTER-RIGHT;" text="المعاملة" />
+                                        <TableColumn fx:id="benifit" minWidth="0.0" prefWidth="193.0" style="-fx-alignment: CENTER-RIGHT;" text="المنفعة" />
+                                        <TableColumn fx:id="action" prefWidth="220.0" style="-fx-alignment: CENTER-RIGHT;" text="الفعل" />
+                                    </columns>
+                                    
+                                </TableView>
+                                <Label layoutX="275.0" layoutY="2.0" prefHeight="25.0" prefWidth="140.0" styleClass="caselikess">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                    </children>
+                </Pane>
+                <Label alignment="CENTER" layoutX="297.0" layoutY="-20.0" prefHeight="40.5" prefWidth="298.0" styleClass="questionheader" textFill="#361926">
+                    <font>
+                        <Font name="Arial" size="24.0" />
+                    </font>
+                </Label>
+                <Pane layoutX="42.0" layoutY="64.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="108.0" prefWidth="836.0">
+                    <children>
+                        <Label layoutX="688.0" layoutY="-2.0" prefHeight="33.0" prefWidth="140.0" styleClass="askquestion">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                  <TextArea layoutX="131.0" layoutY="26.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="79.0" prefWidth="700.0" wrapText="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextArea>
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+        <Button id="bb" fx:id="menu" layoutX="869.0" layoutY="1.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="49.0" prefWidth="54.0">
+            <contextMenu>
+                <ContextMenu fx:id="contextmenu" anchorLocation="CONTENT_TOP_RIGHT" opacity="0.88" style="-fx-font: 16 bold; -fx-background-color: #A6CCF0FF;">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#changeScene" text="الرئيسية         " />
+                        <MenuItem mnemonicParsing="false" onAction="#gotToSceen5" text="قائمة المعاملات البنكية" />
+                        <MenuItem fx:id="button3" mnemonicParsing="false" onAction="#gotToSceen7" text="إضافة فتوى في المعاملات البنكية اﻹسلامية" />
+                        <MenuItem mnemonicParsing="false" onAction="#gotToLogin" text="تسجيل خروج" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </Button>
+
+    </children>
+</AnchorPane>

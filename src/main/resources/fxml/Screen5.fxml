@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxWidth="929.0" minWidth="929.0" prefHeight="696.0" prefWidth="929.0" stylesheets="@../styles/mycss.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screensframework.Screen5Controller">
+    <children>
+        <Pane layoutX="5.0" layoutY="50.0" prefHeight="644.0" prefWidth="919.0" style="-fx-border-color: #444444FF;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+            <children>
+                <Label id="Defintion" layoutX="748.0" layoutY="87.0" prefHeight="37.0" prefWidth="102.0">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label id="condition" layoutX="748.0" layoutY="192.0" prefHeight="31.0" prefWidth="102.0">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <ListView fx:id="conditions" layoutX="141.0" layoutY="192.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="101.0" prefWidth="587.0" style="-fx-border-color: #000000FF; -fx-font: 15 bold;" />
+                <Label id="hokm" layoutX="756.0" layoutY="323.0" prefHeight="33.0" prefWidth="86.0" />
+                <TextField fx:id="hokme" editable="false" layoutX="492.0" layoutY="323.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="235.0" style="-fx-border-color: #000000FF;">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+                <Pane layoutX="128.0" layoutY="364.0" prefHeight="205.0" prefWidth="712.0">
+                    <children>
+                        <Label id="quran" layoutX="621.0" layoutY="14.0" prefHeight="31.0" prefWidth="86.0" />
+                        <Label id="suna" layoutX="621.0" layoutY="77.0" prefHeight="33.0" prefWidth="86.0" />
+                        <Label id="ijmaa" layoutX="622.0" layoutY="129.0" prefHeight="31.0" prefWidth="86.0" />
+                        <TextArea fx:id="quran" editable="false" layoutX="14.0" layoutY="12.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="51.0" prefWidth="587.0" style="-fx-border-color: #000000FF;" wrapText="true">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </TextArea>
+                        <TextArea fx:id="suna" editable="false" layoutX="14.0" layoutY="77.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="51.0" prefWidth="587.0" style="-fx-border-color: #000000FF;" wrapText="true">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </TextArea>
+                        <TextArea fx:id="ijtihad" editable="false" layoutX="14.0" layoutY="137.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="49.0" prefWidth="587.0" style="-fx-border-color: #000000FF;" wrapText="true">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </TextArea>
+                    </children>
+                </Pane>
+                <ComboBox fx:id="combolist" editable="true" layoutX="460.0" layoutY="46.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#getItemSelected" onMouseDragged="#getItemSelected" prefHeight="31.0" prefWidth="268.0" styleClass="reg" visibleRowCount="100" />
+                <Button id="search" alignment="CENTER" contentDisplay="CENTER" layoutX="402.0" layoutY="49.0" mnemonicParsing="false" onAction="#setContractInformation" prefHeight="25.0" prefWidth="46.0" styleClass="reg" />
+                <Label id="listContract2" layoutX="740.0" layoutY="49.0" prefHeight="25.0" prefWidth="102.0">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextArea fx:id="definition" editable="false" layoutX="141.0" layoutY="96.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="81.0" prefWidth="587.0" style="-fx-border-color: #000000FF;">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextArea>
+                <Label alignment="CENTER" layoutX="300.0" layoutY="-20.0" prefHeight="40.0" prefWidth="297.0" styleClass="listheader" textFill="#361926">
+                    <font>
+                        <Font name="Tahoma" size="24.0" />
+                    </font>
+                </Label>
+
+            </children>
+        </Pane>
+        <Button id="bb" fx:id="menu" layoutX="869.0" layoutY="1.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="49.0" prefWidth="54.0">
+            <contextMenu>
+                <ContextMenu fx:id="contextmenu" anchorLocation="CONTENT_TOP_RIGHT" opacity="0.88" style="-fx-font: 16 bold; -fx-background-color: #A6CCF0FF;">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#changeScene" text="الرئيسية         " />
+                        <MenuItem fx:id="adds" mnemonicParsing="false" onAction="#gotToSceen2" text="إضافة معاملة         " />
+                        <MenuItem fx:id="updates" mnemonicParsing="false" onAction="#gotToSceen3" text="تعديل معاملة         " />
+                        <MenuItem fx:id="deletes" mnemonicParsing="false" onAction="#gotToSceen4" text="حذف معاملة         " />
+                        <MenuItem mnemonicParsing="false" onAction="#gotToLogin" text="تسجيل الخروج" />
+                    </items>
+                </ContextMenu>
+            </contextMenu>
+        </Button>
+    </children>
+</AnchorPane>

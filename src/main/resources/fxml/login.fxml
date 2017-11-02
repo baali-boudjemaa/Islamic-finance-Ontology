@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="326.0" maxWidth="447.0" minHeight="326.0" minWidth="447.0" prefHeight="326.0" prefWidth="447.0" style="-fx-background-color: rgb(95,186,125);" stylesheets="@../styles/mycss.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screensframework.LoginController">
+    <children>
+        <Pane layoutX="36.0" layoutY="42.0" prefHeight="254.0" prefWidth="376.0" style="-fx-border-color: #0000FF;">
+            <children>
+                <JFXComboBox fx:id="usertype" layoutX="54.0" layoutY="108.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="31.0" prefWidth="170.0" style="-fx-border-color: #000000FF;" />
+                <JFXPasswordField fx:id="pass" layoutX="54.0" layoutY="146.0" maxWidth="170.0" minWidth="170.0" prefHeight="31.0" prefWidth="170.0" />
+                <Label layoutX="266.0" layoutY="113.0" prefHeight="32.0" prefWidth="96.0" styleClass="usertype" />
+                <Label layoutX="277.0" layoutY="154.0" prefHeight="25.0" prefWidth="85.0" styleClass="password" />
+                <JFXButton fx:id="button1" layoutX="14.0" layoutY="213.0" onAction="#checkUser" prefHeight="25.0" prefWidth="55.0" style="-fx-border-color: #000000FF; -fx-border-width: 0.5;" text="دخول" />
+            <Label fx:id="incorrect" layoutX="78.0" layoutY="213.0" prefHeight="25.0" prefWidth="164.0" />
+            </children>
+        </Pane>
+          <Label layoutX="61.0" layoutY="23.0" prefHeight="39.0" prefWidth="317.0" styleClass="login">
+              <font>
+                  <Font size="15.0" />
+              </font>
+          </Label>
+    </children>
+</AnchorPane>
